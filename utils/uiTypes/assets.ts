@@ -182,3 +182,12 @@ export interface StakeAccount {
   delegatedValidator: PublicKey | null
   amount: number
 }
+
+export interface ValidatorProvider {
+  name: string
+  address: PublicKey
+  owner: PublicKey
+  description: string
+  rating: number
+  numberOfGovernanceServing: number
+}

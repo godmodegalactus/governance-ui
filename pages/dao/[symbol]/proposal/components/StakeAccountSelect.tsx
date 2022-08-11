@@ -1,6 +1,4 @@
 import Select from '@components/inputs/Select'
-import { Governance } from '@solana/spl-governance'
-import { ProgramAccount } from '@solana/spl-governance'
 import React, { useEffect } from 'react'
 import { web3 } from '@project-serum/anchor'
 import { StakeAccount, StakeState } from '@utils/uiTypes/assets'
@@ -40,8 +38,6 @@ const StakeAccountSelect = ({
   value
   error?
   stakeAccounts: StakeAccount[]
-  shouldBeGoverned?
-  governance?: ProgramAccount<Governance> | null | undefined
   label?
   noMaxWidth?: boolean
   autoselectFirst?: boolean

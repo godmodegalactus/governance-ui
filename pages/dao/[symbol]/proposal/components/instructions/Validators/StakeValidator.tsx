@@ -24,7 +24,7 @@ import * as anchor from '@project-serum/anchor'
 import { parseMintNaturalAmountFromDecimal } from '@tools/sdk/units'
 
 const SOLANA_VALIDATOR_DAO_PROGRAM_ID = new PublicKey(
-  'AwyKDr1Z5BfdvK3jX1UWopyjsJSV5cq4cuJpoYLofyEn'
+  'BC9n2UZZP4vebGeHuMAAnSzeRA5rv3hCoPFqsybLLpQv'
 )
 //const SOLANA_VALIDATOR_DAO_IDL_ID = new PublicKey('GnhBKwcWcqUwSLoheNKQLvdu6v3fFR9mUaQnw6Ci8jmP')
 const GOVERNANCE_PROGRAM_ID = new PublicKey(

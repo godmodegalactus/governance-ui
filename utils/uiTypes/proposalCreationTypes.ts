@@ -9,7 +9,11 @@ import { SplTokenUIName } from '@utils/splTokens'
 import { DepositWithMintAccount, Voter } from 'VoteStakeRegistry/sdk/accounts'
 import { LockupKind } from 'VoteStakeRegistry/tools/types'
 import { consts as foresightConsts } from '@foresight-tmp/foresight-sdk'
-import { AssetAccount, StakeAccount } from '@utils/uiTypes/assets'
+import {
+  AssetAccount,
+  StakeAccount,
+  ValidatorProvider,
+} from '@utils/uiTypes/assets'
 
 export interface UiInstruction {
   serializedInstruction: string
@@ -468,7 +472,7 @@ export enum Instructions {
   StakeValidator,
   DeactivateValidatorStake,
   WithdrawValidatorStake,
-  DifferValidatorStake,
+  AddRegisterValidatorProvider,
 }
 
 export type createParams = [
@@ -539,4 +543,9 @@ export interface ValidatorWithdrawStakeForm {
   governedTokenAccount: AssetAccount | undefined
   stakingAccount: StakeAccount | undefined
   amount: number
+}
+
+export interface AddRegisteredProviderForm {
+  governedTokenAccount: AssetAccount | undefined
+  provider: ValidatorProvider | undefined
 }

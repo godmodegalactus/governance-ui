@@ -64,6 +64,7 @@ import CreateStream from './components/instructions/Streamflow/CreateStream'
 import StakeValidator from './components/instructions/Validators/StakeValidator'
 import DeactivateValidatorStake from './components/instructions/Validators/DeactivateStake'
 import WithdrawValidatorStake from './components/instructions/Validators/WithdrawStake'
+import AddRegisteredValidatorProvider from './components/instructions/Validators/AddRegistedValidatorProvider'
 import MakeChangeSpotMarket from './components/instructions/Mango/MakeChangeSpotMarket'
 import MakeCreatePerpMarket from './components/instructions/Mango/MakeCreatePerpMarket'
 import useCreateProposal from '@hooks/useCreateProposal'
@@ -365,6 +366,13 @@ const New = () => {
             index={idx}
             governance={governance}
           ></WithdrawValidatorStake>
+        )
+      case Instructions.AddRegisterValidatorProvider:
+        return (
+          <AddRegisteredValidatorProvider
+            index={idx}
+            governance={governance}
+          ></AddRegisteredValidatorProvider>
         )
       case Instructions.ChangeMakeDonation:
         return (

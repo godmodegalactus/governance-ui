@@ -9,7 +9,7 @@ const ENDPOINTS: EndpointInfo[] = [
   },
   {
     name: 'devnet',
-    url: process.env.DEVNET_RPC || 'https://api.dao.devnet.solana.com/',
+    url: process.env.DEVNET_RPC || 'https://api.devnet.solana.com',
   },
   {
     name: 'localnet',
